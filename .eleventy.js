@@ -15,9 +15,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('static');
 
   return {
+    markdownTemplateEngine: 'njk',
+    dataTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk',
     dir: {
       output: "build",
-      input: "src"
+      input: "src",
+      includes: "_includes"
     }
   }
 }

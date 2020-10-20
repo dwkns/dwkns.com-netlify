@@ -1,21 +1,85 @@
 ---
-title: "dwkns.com"
+title: Digital consultancy & production for discerning clients | dwkns.com 
+layout: _page-layout.njk
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/styles.css" />
-  <title>{{title}}</title>
-</head>
-<body>
-  <h1 class="text-3xl p-4">This is {{title}}</h1>
-  <div class="text-md bg-blue-500">
-    <p class="p-4">
-      This is body content. It will have a blue background if Tailwind is working as expected. 
-    </p>
-  </div>
-<script type="module" src="/index.js" async defer></script>
-</body>
-</html>
+
+{% import "_components/_cards.njk" as cards %}
+<section>
+				<h2 class="pt-16 pb-8 text-3xl text-gray-900 font-bold leading-tight max-w-sm">Services</h2>
+				<div class="grid md:grid-cols-3 gap-8">
+
+           <div>
+            {{ cards.image_above_text(
+                "images/consultancy.png", 
+                "Consultancy",
+                "Taking the time to understand your business and what you are trying to achieve gives us an edge. We listen, then translate your goals and requirements, balancing them with end-user needs — the result: dramatically more effective communication."
+              ) }}
+          </div> 
+
+           <div>
+            {{ cards.image_above_text(
+                "images/design.png", 
+                "Design",
+                "From graphic design, layout, illustration through to 3D and animation, we can deliver high-quality design for print, presentations, exhibitions, web and social media distribution."
+              ) }}
+          </div>
+
+          <div>
+            {{ cards.image_above_text(
+                "images/production.png", 
+                "Production",
+                "Taking the time to understand your business and what you are trying to achieve gives us an edge. We listen, then translate your goals and requirements, balancing them with end-user needs — the result: dramatically more effective communication."
+              ) }}
+          </div> 
+
+				</div>
+</section>
+
+<section>
+				<h2 class="pt-16 pb-8 text-3xl text-gray-900 font-bold leading-tight max-w-sm">Projects</h2>
+				<div class="grid md:grid-cols-3 gap-8">
+
+           <div>
+            {{ cards.image_above_text(
+                "images/sow.jpg", 
+                "Stories on Walls - Pitch Deck",
+                "We created bespoke communication, graphic design and animation for this highly successful pitch deck. The first group, the founders, presented it to invested over £300k in this brand new business."
+              ) }}
+          </div> 
+
+           <div>
+            {{ cards.image_above_text(
+                "images/rolex.jpg", 
+                "Rolex - Website & CMS design",
+                "Rolex live their brand. There is no expense spared in their search for excellence. They required some highly specialised tools to manage the thousands of pages of content they produce in 11 languages. We helped them build it. "
+              ) }}
+          </div>
+
+          <div>
+            {{ cards.image_above_text(
+                "images/cristal.jpg", 
+                "Cristal - Internal Comms: Interactive map",
+                "Sometime interactivity is the best communication you can create. Cristal wanted to show their workforce the breath of the company and how the different divisions work together. This interactive map allows them to understand the scale and diversity of the business quickly and easily."
+              ) }}
+          </div> 
+
+                    <div>
+            {{ cards.image_above_text(
+                "images/jlr.jpg", 
+                "Jaguar Landrover - Internal Comms: Website",
+                "Jaguar Landrover has some particular issues in convincing their retailers to sell more used cars. This website and video were part of a package of communication pieces designed to show retailers the benefits of a well run 'Jaguar Approved' programme. "
+              ) }}
+          </div> 
+
+           <div>
+            {{ cards.image_above_text(
+                "images/ap.png", 
+                "Acceleration Partners - Marketing handbook",
+                "As one of the leading global affiliate marketing agencies, Acceleration Partners needed a printed guide to show the nuances of running an international programme. This 30-page booklet is full of custom infographics and is designed to simplify the complexities of managing cross-border campaigns."
+              ) }}
+          </div>
+
+         
+
+				</div>
+</section>
